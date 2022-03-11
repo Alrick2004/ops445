@@ -1,0 +1,47 @@
+[root@fedora a1]# python3 ./CheckA1.py -v -f ./a1_ahscott.py
+Please enter your email user id:ahscott
+
+== Preliminary A1 Test Run Report for ahscott==
+The following is your preliminary test run report for assignment 1. Please review the report and fix all the errors identified before submitting your algorithm, python script, and test report to blackboard using the assignment 1 submission link which will be available on Monday, October 16 2020.
+
+========================================
+Test run command 1 : python3 a1_ahscott.py 2020-10-10
+--test passed--
+Test run command 2 : python3 a1_ahscott.py 2020-10-09
+--test passed--
+Test run command 3 : python3 a1_ahscott.py 2020-06-30
+--test passed--
+Test run command 4 : python3 a1_ahscott.py 20201010
+--test passed--
+Test run command 5 : python3 a1_ahscott.py 2020/10/10
+--test passed--
+Test run command 6 : python3 a1_ahscott.py 2020.02.29
+--test passed--
+Test run command 7 : python3 a1_ahscott.py 2019.02.29
+--test passed--
+Test run command 8 : python3 a1_ahscott.py 2019.13.12
+--test failed--
+---- expect: Error 02: wrong month entered
+----  given: Error 02: Wrong month entered
+Test run command 9 : python3 a1_ahscott.py 2019.06.31
+--test passed--
+Test run command 10 : python3 a1_ahscott.py 201802
+--test passed--
+Test run command 11 : python3 a1_ahscott.py 18981225
+--test passed--
+Test run command 12 : python3 a1_ahscott.py 19981299
+--test passed--
+Test run command 13 : python3 a1_ahscott.py 189802
+--test passed--
+Test run command 14 : python3 a1_ahscott.py 20201010 2020/10/10
+--test failed--
+---- expect: Usage: a1_ahscott.py YYYYMMDD|YYYY/MM/DD|YYYY-MM-DD|YYYY.MM.DD
+----  given: Usage: a1_ahscott.pyYYYYMMDD|YYYY/MM/DD|YYYY-MM-DD|YYYY.MM.DD
+Test run command 15 : python3 a1_ahscott.py 
+--test failed--
+---- expect: Usage: a1_ahscott.py YYYYMMDD|YYYY/MM/DD|YYYY-MM-DD|YYYY.MM.DD
+----  given: Usage: a1_ahscott.pyYYYYMMDD|YYYY/MM/DD|YYYY-MM-DD|YYYY.MM.DD
+Test Results: {1: 1, 2: 1, 3: 1, 4: 1, 5: 1, 6: 1, 7: 1, 8: 0, 9: 1, 10: 1, 11: 1, 12: 1, 13: 1, 14: 0, 15: 0}
+Total test run marks:  24.0
+Total marks for script (max. 30): 24.0
+
