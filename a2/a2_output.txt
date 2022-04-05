@@ -1,0 +1,39 @@
+test_percent (__main__.TestPercent)
+percent_to_graph returns correct '##    ' format ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+test_du_sub (__main__.TestDuSub)
+du_sub returns a list ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.305s
+
+OK
+test_dir_dict_func (__main__.TestDirDict)
+given mock du input, create_dir_dict returns properly formatted dict ... ERROR
+
+======================================================================
+ERROR: test_dir_dict_func (__main__.TestDirDict)
+given mock du input, create_dir_dict returns properly formatted dict
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/ops445/a2/./CheckA2.py", line 49, in test_dir_dict_func
+    given = duim.create_dir_dict(test_dat)
+  File "/root/ops445/a2/duim.py", line 69, in create_dir_dict
+    arr1 = alist[0].decode('utf-8').strip().split('\n')
+AttributeError: 'str' object has no attribute 'decode'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+test_argparse_help (__main__.TestArgs)
+duim.py -h returns the required options ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.055s
+
+OK
